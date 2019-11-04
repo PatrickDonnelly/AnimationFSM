@@ -46,6 +46,18 @@ void Player::handleInput(Input in)
 		//std::cout << "Player Idling" << std::endl;
 		m_state.jumping();
 		break;
+	case Input::Action::A:
+		std::cout << "Player A" << std::endl;
+		m_state.falling();
+		break;
+	case Input::Action::S:
+		//std::cout << "Player running" << std::endl;
+		m_state.running();
+		break;
+	case Input::Action::D:
+		//std::cout << "Player walking" << std::endl;
+		m_state.walking();
+		break;
 	default:
 		break;
 	}

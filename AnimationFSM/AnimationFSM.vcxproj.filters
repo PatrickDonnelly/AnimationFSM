@@ -43,6 +43,12 @@
     <Filter Include="Source Files\Readme">
       <UniqueIdentifier>{1bc46bdb-7446-4df6-9ccb-727da7603796}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\FSM\FSMADDED">
+      <UniqueIdentifier>{1f72dd38-3f03-4107-b3b2-9390652e3e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FSM\added">
+      <UniqueIdentifier>{ef13cd9d-b979-4e33-927e-1d96580eb2b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSprite.h">
@@ -72,14 +78,14 @@
     <ClInclude Include="PlayerFSM.h">
       <Filter>Header Files\FSM</Filter>
     </ClInclude>
-    <ClInclude Include="Walking.h">
-      <Filter>Header Files\FSM</Filter>
+    <ClInclude Include="Falling.h">
+      <Filter>Header Files\FSM\added</Filter>
     </ClInclude>
     <ClInclude Include="Running.h">
-      <Filter>Header Files\FSM</Filter>
+      <Filter>Header Files\FSM\added</Filter>
     </ClInclude>
-    <ClInclude Include="Falling.h">
-      <Filter>Header Files\FSM</Filter>
+    <ClInclude Include="Walking.h">
+      <Filter>Header Files\FSM\added</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -107,14 +113,14 @@
     <ClCompile Include="PlayerMachine.cpp">
       <Filter>Source Files\FSM</Filter>
     </ClCompile>
+    <ClCompile Include="Falling.cpp">
+      <Filter>Source Files\FSM\FSMADDED</Filter>
+    </ClCompile>
     <ClCompile Include="Walking.cpp">
-      <Filter>Source Files\FSM</Filter>
+      <Filter>Source Files\FSM\FSMADDED</Filter>
     </ClCompile>
     <ClCompile Include="Running.cpp">
-      <Filter>Source Files\FSM</Filter>
-    </ClCompile>
-    <ClCompile Include="Falling.cpp">
-      <Filter>Source Files\FSM</Filter>
+      <Filter>Source Files\FSM\FSMADDED</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
