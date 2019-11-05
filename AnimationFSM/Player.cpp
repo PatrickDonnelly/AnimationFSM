@@ -35,28 +35,20 @@ void Player::handleInput(Input in)
 		m_state.idle();
 		break;
 	case Input::Action::UP:
-		//std::cout << "Player Up" << std::endl;
+		//std::cout << "Player Jumping then falling" << std::endl;
+		m_state.jumping();
 		m_state.climbing();
-		break;
-	case Input::Action::LEFT:
-		//std::cout << "Player Left" << std::endl;
-		m_state.jumping();
-		break;
-	case Input::Action::RIGHT:
-		//std::cout << "Player Idling" << std::endl;
-		m_state.jumping();
-		break;
-	case Input::Action::A:
-		std::cout << "Player A" << std::endl;
 		m_state.falling();
 		break;
-	case Input::Action::S:
-		//std::cout << "Player running" << std::endl;
-		m_state.running();
-		break;
-	case Input::Action::D:
+	case Input::Action::LEFT:
 		//std::cout << "Player walking" << std::endl;
 		m_state.walking();
+		m_state.running();
+		break;
+	case Input::Action::RIGHT:
+		//std::cout << "Player Running" << std::endl;
+		m_state.walking();
+		m_state.running();
 		break;
 	default:
 		break;
